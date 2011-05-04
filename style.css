@@ -134,18 +134,20 @@ button {width: auto; overflow: visible;}
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
+html {
+}
 
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
+body { font-family: "Helvetica Neue", sans-serif; background: url(_/img/bgpattern.png) repeat top left; }
 
 /* using local fonts? make sure to read up on Paul Irish's 
 	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
 
 /* we like off-black for text */
-body, select, input, textarea {color: #333;}
+body, select, input, textarea {color: #fff;}
 
-a {color: #03f;}
-a:hover {color: #69f;}
+a {color: #0ff; text-decoration: none;}
+a:hover {color: #9ff;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
@@ -162,9 +164,71 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 /* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
 
-#page-wrap {width: 960px; margin: 20px auto;}
+#top-line {
+		background: url(_/img/topline.png) #111111 repeat-x left top;
+		width: 100%;
+		height: 5px;
+}
 
+#page-wrap {
+	width: 940px; 
+	margin: 0px auto; 
+	padding-top: 40px;
+	background: url(_/img/light.png) top center no-repeat;
+}
+
+header {
+	clear: both;
+	float: none;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+#logo {
+	float: left;
+	overflow: hidden;
+}
+nav {
+	font-size: 15px; 
+	float: right; 
+	overflow: hidden;
+	margin-top: -10px;
+}
+nav li {
+	float: left;
+	padding: 20px 5px;
+}
+nav li a {
+	padding: 10px;
+	color: #fff;
+}
+nav li a:hover, nav li.current_page_item a {
+	background-color: #0ff;
+	color: #000;
+	box-shadow: 0 0 10px #0ff;
+	border-radius: 5px;
+}
+
+article {
+	margin-top: 30px;
+}
+
+#footer {
+	border-top: 1px solid rgb(50, 50, 50);
+	border-top: 1px solid rgba(255, 255, 255, 0.07);
+	min-height: 270px;
+	background: url(_/img/footerbg.png) top center no-repeat;
+	text-align: center;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 10px;
+}
 .post {}
+
+.entry {
+	padding: 10px 0;
+}
 
 .entry-content {}
 .entry-content a {}

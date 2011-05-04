@@ -29,5 +29,6 @@
     		'after_title'   => '</h2>'
     	));
     }
+	add_theme_support( 'post-thumbnails' );
 
 ?>

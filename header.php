@@ -106,11 +106,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+	<div id="top-line"></div>
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
+			<h1  id="logo"><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_url');?>/_/img/logo.png" alt="<?php bloginfo('name');?> <?php bloginfo('description'); ?>" title="<?php bloginfo('name');?> <?php bloginfo('description'); ?>"/></a></h1>
+
+					<?php wp_nav_menu(array('container' => 'nav','menu' => 'main' )); ?>
 		</header>
 

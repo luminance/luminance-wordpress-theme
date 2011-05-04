@@ -10,22 +10,13 @@
 				
 				<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
-			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-
 			</div>
 			
 			<?php edit_post_link('Edit this entry','','.'); ?>
 			
 		</article>
 
-	<?php comments_template(); ?>
-
 	<?php endwhile; endif; ?>
 	
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

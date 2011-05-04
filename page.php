@@ -6,8 +6,6 @@
 
 			<h2><?php the_title(); ?></h2>
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-
 			<div class="entry">
 
 				<?php the_content(); ?>
@@ -20,10 +18,8 @@
 
 		</article>
 		
-		<?php comments_template(); ?>
 
 		<?php endwhile; endif; ?>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
