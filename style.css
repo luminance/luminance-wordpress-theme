@@ -202,7 +202,11 @@ nav li a {
 	padding: 10px;
 	color: #fff;
 }
-nav li a:hover, nav li.current_page_item a {
+nav li.current_page_item a {
+	color: #0ff;
+}
+
+nav li a:hover  {
 	background-color: #0ff;
 	color: #000;
 	box-shadow: 0 0 10px #0ff;
@@ -210,6 +214,8 @@ nav li a:hover, nav li.current_page_item a {
 	-moz-box-shadow: 0 0 10px #0ff;
 	border-radius: 5px;
 }
+
+
 
 article {
 	margin-top: 30px;
