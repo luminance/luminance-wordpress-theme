@@ -234,14 +234,18 @@ article {
 }
 .post {}
 
-.post h2 {
-	font-size: 20px;
+.entry-title  {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 15px;
 }
 
 .entry {
 	padding: 10px 0;
 	width: 600px;
 	line-height: 20px;
+	color: #ccc;
+	font-size: 14px;
 }
 
 .entry-content {}

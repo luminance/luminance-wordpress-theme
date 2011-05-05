@@ -21,10 +21,6 @@
 				<?php the_content(); ?>
 			</div>
 
-			<footer class="postmetadata">
-				
-			</footer>
-
 		</article>
 
 	<?php endwhile; ?>
