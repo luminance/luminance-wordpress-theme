@@ -224,13 +224,12 @@ article {
 #footer {
 	border-top: 1px solid rgb(50, 50, 50);
 	border-top: 1px solid rgba(255, 255, 255, 0.07);
-	min-height: 270px;
-	background: url(_/img/footerbg.png) top center no-repeat;
 	text-align: center;
-	color: #333;
+	color: #666;
 	font-size: 13px;
 	font-weight: bold;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .post {}
 
