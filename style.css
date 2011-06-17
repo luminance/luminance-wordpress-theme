@@ -247,6 +247,11 @@ article {
 	font-size: 14px;
 }
 
+.sub-title {
+	color: #ccc;
+	padding: 0 0 4px 0;	
+}
+
 .entry-content {}
 .entry-content a {}
 .entry-content a:hover {}
